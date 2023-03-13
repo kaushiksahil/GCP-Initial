@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 let billingAPI = require("./controller/Billing");
 let storageAPI = require("./controller/Storage");
+let bigqueryAPI = require("./controller/Bigquery");
 const app = express();
 let bodyParser = require("body-parser");
 // let mongoose = require("mongoose");
@@ -23,6 +24,7 @@ var port = process.env.PORT || 9000;
 // app.use("/init", API);
 app.use("/billing", billingAPI);
 app.use("/storage", storageAPI);
+app.use("/bq", bigqueryAPI);
 
 app.listen(port, function () {
   console.log("Server Started Now!!");

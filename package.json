@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/bigquery": "^6.1.0",
+    "@google-cloud/bigquery-data-transfer": "^3.2.1",
     "@google-cloud/billing": "^3.3.1",
     "@google-cloud/billing-budgets": "^4.2.1",
     "@google-cloud/storage": "^6.9.4",
