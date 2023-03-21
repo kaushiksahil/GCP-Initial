@@ -27,5 +27,9 @@ app.use("/storage", storageAPI);
 app.use("/bq", bigqueryAPI);
 
 app.listen(port, function () {
-  console.log("Server Started Now!!");
+  console.log("Server Started Now at port :: " + port);
+});
+
+app.use("/", (req, res) => {
+  res.status(200).send("Hello World");
 });
